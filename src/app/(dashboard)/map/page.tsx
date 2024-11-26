@@ -1,4 +1,5 @@
 import { Search } from "lucide-react";
+import Link from "next/link";
 
 const Map = () => {
   return (
@@ -24,9 +25,11 @@ const Map = () => {
       </div>
 
       <div className="absolute bottom-4 left-4 right-4">
-        <button className="w-full uppercase bg-red-500 text-white py-3 rounded-lg shadow-lg hover:bg-blue-600">
-          Nearby Seekers
-        </button>
+        <Link href="/blood-donor-call">
+          <button className="w-full uppercase bg-red-500 text-white py-3 rounded-lg shadow-lg hover:bg-red-600">
+            Nearby Seekers
+          </button>
+        </Link>
       </div>
     </div>
   );
