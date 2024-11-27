@@ -17,7 +17,7 @@ export default function Dashboard() {
     { name: "Seeker", Icon: Search, link: "seeker" },
     { name: "Request", Icon: PlusSquare, link: "request" },
     { name: "Hospital", Icon: Hospital, link: "hospital" },
-    { name: "Bank", Icon: Banknote, link: "bank" },
+    { name: "Banks", Icon: Banknote, link: "banks" },
     { name: "Profile", Icon: User, link: "profile" },
     { name: "FAQ", Icon: HelpCircle, link: "faq" },
     { name: "Social", Icon: Users, link: "social" },
