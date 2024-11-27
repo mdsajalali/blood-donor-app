@@ -37,7 +37,7 @@ const hospitalsData = [
   },
 ];
 
-const HospitalsPage = () => {
+const Hospitals = () => {
   return (
     <div className="min-h-screen bg-gray-100 px-4 py-6 bg-gradient-to-b from-red-800 to-red-900">
       {/* Top Bar with Back Icon and Heading */}
@@ -103,4 +103,4 @@ const HospitalsPage = () => {
   );
 };
 
-export default HospitalsPage;
+export default Hospitals;

@@ -16,10 +16,10 @@ export default function Dashboard() {
     { name: "Map", Icon: MapPin, link: "map" },
     { name: "Seeker", Icon: Search, link: "seeker" },
     { name: "Request", Icon: PlusSquare, link: "request" },
-    { name: "Hospital", Icon: Hospital, link: "hospital" },
+    { name: "Hospitals", Icon: Hospital, link: "hospitals" },
     { name: "Banks", Icon: Banknote, link: "banks" },
     { name: "Profile", Icon: User, link: "profile" },
-    { name: "FAQ", Icon: HelpCircle, link: "faq" },
+    { name: "Donor Charts", Icon: HelpCircle, link: "donor-charts" },
     { name: "Social", Icon: Users, link: "social" },
   ];
 
