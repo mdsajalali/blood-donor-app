@@ -1,6 +1,6 @@
 import { ArrowLeftCircle } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
 const DonorPage = () => {
   return (
@@ -13,8 +13,8 @@ const DonorPage = () => {
         <h1 className="text-lg font-semibold text-white">Blood Donor</h1>
       </div>
       {/* Header */}
-      <header className="text-center mb-8">
-        <h1 className="text-3xl font-semibold text-white pt-5">
+      <header className="text-center mb-8 mt-20">
+        <h1 className="text-3xl font-semibold text-white ">
           Become a Blood Donor
         </h1>
         <p className="text-lg text-white mt-2">
@@ -25,14 +25,15 @@ const DonorPage = () => {
       {/* Donor Info Card */}
       <div className="bg-white rounded-lg shadow-lg w-full max-w-sm p-6 space-y-4">
         <div className="text-center">
-          <img
-            src="https://via.placeholder.com/150"
-            alt="Donor"
-            className="w-32 h-32 mx-auto rounded-full object-cover"
-          />
-          <h2 className="mt-4 text-2xl font-semibold text-gray-800">
-            John Doe
-          </h2>
+          <div className="relative w-32 h-32 mx-auto   object-cover">
+            <Image
+              src="/profile.webp"
+              alt="Donor"
+              fill
+              className=" rounded-full "
+            />
+          </div>
+          <h2 className="mt-4 text-2xl font-semibold text-gray-800">Sajal</h2>
           <p className="text-sm text-gray-600">Donor Type: O+</p>
         </div>
 
