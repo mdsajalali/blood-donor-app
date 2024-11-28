@@ -100,10 +100,18 @@ const Social = () => {
       {/* Footer */}
       <footer className="fixed bottom-0 left-0 right-0 bg-white shadow-md py-3">
         <div className="flex justify-around">
-          <button className="text-gray-600">Home</button>
-          <button className="text-gray-600">Donate</button>
-          <button className="text-gray-600">Social</button>
-          <button className="text-gray-600">Profile</button>
+          <Link href="/dashboard">
+            <button className="text-gray-600">Home</button>
+          </Link>
+          <Link href="/donor">
+            <button className="text-gray-600">Donate</button>
+          </Link>
+          <Link href="/hospitals">
+            <button className="text-gray-600">Hospitals</button>
+          </Link>
+          <Link href="/profile">
+            <button className="text-gray-600">Profile</button>
+          </Link>
         </div>
       </footer>
     </div>

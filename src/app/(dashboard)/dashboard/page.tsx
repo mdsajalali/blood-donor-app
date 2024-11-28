@@ -53,10 +53,10 @@ export default function Dashboard() {
       {/* Footer */}
       <footer className="flex justify-between items-center px-6 mt-10 text-sm">
         <div>
-          <div className="font-bold text-center">29</div> Donors
+          <div className="font-bold text-3xl text-center">29</div> Donors
         </div>
         <div>
-          <div className="font-bold text-center">14</div> Requests
+          <div className="font-bold text-3xl text-center">14</div> Requests
         </div>
       </footer>
 

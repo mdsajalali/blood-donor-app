@@ -76,7 +76,7 @@ export default function Banks() {
   const closeModal = () => setSelectedBank(null);
 
   return (
-    <div className="bg-red-700 min-h-screen">
+    <div className=" bg-gradient-to-b from-red-800 to-red-900 min-h-screen">
       {/* Top Bar with Back Icon and Heading */}
       <div className="absolute top-4 left-4 right-4 flex items-center justify-between">
         <Link href="/dashboard">
@@ -87,7 +87,7 @@ export default function Banks() {
 
       {/* Main Content */}
       <div className="pt-20 px-4">
-        <div className="space-y-4">
+        <div className="space-y-4 pb-10">
           {bloodBanks.map((bank) => (
             <div
               key={bank.id}
@@ -98,7 +98,7 @@ export default function Banks() {
                 <User className="text-white" size={16} />
                 {bank.name}
               </h2>
-              <p className="text-sm flex items-center gap-2">
+              <p className="text-sm flex py-2 items-center gap-2">
                 <MapPin className="text-white" size={16} />
                 {bank.location}
               </p>
