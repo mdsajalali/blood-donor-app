@@ -1,8 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { ArrowLeftCircle, Phone, MapPin, User } from "lucide-react"; // Icons from lucide-react
+import { Phone, MapPin, User } from "lucide-react";
 import Link from "next/link";
+import Heading from "@/components/Heading";
 
 // Type for a single blood bank
 type BloodBank = {
@@ -71,19 +72,14 @@ const bloodBanks: BloodBank[] = [
 ];
 
 export default function Banks() {
-  const [selectedBank, setSelectedBank] = useState<BloodBank | null>(null); // State for selected bank
+  const [selectedBank, setSelectedBank] = useState<BloodBank | null>(null);
 
   const closeModal = () => setSelectedBank(null);
 
   return (
     <div className=" bg-gradient-to-b from-red-800 to-red-900 min-h-screen">
       {/* Top Bar with Back Icon and Heading */}
-      <div className="absolute top-4 left-4 right-4 flex items-center justify-between">
-        <Link href="/dashboard">
-          <ArrowLeftCircle className="text-white cursor-pointer" size={30} />
-        </Link>
-        <h1 className="text-lg font-semibold text-white">Blood Banks</h1>
-      </div>
+      <Heading title="Blood Banks" />
 
       {/* Main Content */}
       <div className="pt-20 px-4">

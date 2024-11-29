@@ -1,15 +1,8 @@
 "use client";
 
-import {
-  ArrowLeftCircle,
-  Mail,
-  Phone,
-  Droplet,
-  ToggleRight,
-  ToggleLeft,
-} from "lucide-react";
+import Heading from "@/components/Heading";
+import { Mail, Phone, Droplet, ToggleRight, ToggleLeft } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 import { useState } from "react";
 
 export default function Profile() {
@@ -21,12 +14,7 @@ export default function Profile() {
   return (
     <div className="relative w-full h-screen bg-gradient-to-b from-red-800 to-red-900 p-4">
       {/* Top Bar with Back Icon and Heading */}
-      <div className="flex items-center justify-between mb-6">
-        <Link href="/dashboard">
-          <ArrowLeftCircle className="text-white" size={30} />
-        </Link>
-        <h1 className="text-lg font-semibold text-white">My Profile</h1>
-      </div>
+      <Heading title="My Profile" />
 
       {/* Profile Picture and Name */}
       <div className="flex flex-col items-center gap-4 mt-20">

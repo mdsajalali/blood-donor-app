@@ -1,16 +1,11 @@
-import { ArrowLeftCircle } from "lucide-react";
+import Heading from "@/components/Heading";
 import Link from "next/link";
 
 export default function Request() {
   return (
     <div className="flex items-center justify-center min-h-screen bg-red-700">
       {/* Top Bar with Back Icon and Heading */}
-      <div className="absolute top-4 left-4 right-4 flex  items-center justify-between">
-        <Link href="/dashboard">
-          <ArrowLeftCircle className="text-white" size={30} />
-        </Link>
-        <h1 className="text-lg font-semibold text-white">Add Request</h1>
-      </div>
+      <Heading title="Add Request" />
       <div className="w-80 bg-red-600 rounded-lg p-6 relative">
         {/* Form Section */}
         <form className="mt-16 space-y-6">

@@ -1,16 +1,11 @@
-import { Phone, ArrowLeftCircle } from "lucide-react";
-import Link from "next/link";
+import Heading from "@/components/Heading";
+import { Phone } from "lucide-react";
 
 const BloodDonorCall = () => {
   return (
     <div className="relative w-full h-screen bg-gradient-to-b from-red-800 to-red-900">
       {/* Top Bar with Back Icon and Heading */}
-      <div className="absolute top-4 left-4 right-4 flex  items-center justify-between">
-        <Link href="/dashboard">
-          <ArrowLeftCircle className="text-white" size={30} />
-        </Link>
-        <h1 className="text-lg font-semibold text-white">Blood Donor</h1>
-      </div>
+      <Heading title="Blood Donor" />
 
       {/* Blood Donor Info */}
       <div className="absolute top-1/4 left-4 right-4 p-4  ">

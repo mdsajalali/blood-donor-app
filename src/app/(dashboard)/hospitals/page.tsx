@@ -1,6 +1,4 @@
-import { ArrowLeftCircle } from "lucide-react";
-import Link from "next/link";
-import React from "react";
+import Heading from "@/components/Heading";
 
 const hospitalsData = [
   {
@@ -41,12 +39,7 @@ const Hospitals = () => {
   return (
     <div className="min-h-screen bg-gray-100 px-4 py-6 bg-gradient-to-b from-red-800 to-red-900">
       {/* Top Bar with Back Icon and Heading */}
-      <div className="absolute top-4 left-4 right-4 flex  items-center justify-between">
-        <Link href="/dashboard">
-          <ArrowLeftCircle className="text-white" size={30} />
-        </Link>
-        <h1 className="text-lg font-semibold text-white">Hospitals</h1>
-      </div>
+      <Heading title="Hospitals" />
       {/* Header */}
       <header className="text-center mb-8 mt-16">
         <h1 className="text-3xl font-semibold text-white">

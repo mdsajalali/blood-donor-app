@@ -1,16 +1,9 @@
-import { ArrowLeftCircle } from "lucide-react";
-import Link from "next/link";
-
+import Heading from "@/components/Heading";
 export default function DonorCharts() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-red-800 to-red-900 p-4">
       {/* Top Bar with Back Icon and Heading */}
-      <div className="absolute top-4 left-4 right-4 flex  items-center justify-between">
-        <Link href="/dashboard">
-          <ArrowLeftCircle className="text-white" size={30} />
-        </Link>
-        <h1 className="text-lg font-semibold text-white">Donor Charts</h1>
-      </div>
+      <Heading title="Donor Charts" />
       {/* Title */}
       <h1 className="text-center text-xl font-bold text-white mt-16 mb-4">
         Donor/Patient Chart

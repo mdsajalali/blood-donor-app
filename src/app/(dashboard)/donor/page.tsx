@@ -1,17 +1,12 @@
-import { ArrowLeftCircle } from "lucide-react";
+import Heading from "@/components/Heading";
 import Image from "next/image";
-import Link from "next/link";
 
 const DonorPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-red-800 to-red-900 flex flex-col items-center justify-center px-4 py-6">
       {/* Top Bar with Back Icon and Heading */}
-      <div className="absolute top-4 left-4 right-4 flex  items-center justify-between">
-        <Link href="/dashboard">
-          <ArrowLeftCircle className="text-white" size={30} />
-        </Link>
-        <h1 className="text-lg font-semibold text-white">Blood Donor</h1>
-      </div>
+      <Heading title="Blood Donor" />
+
       {/* Header */}
       <header className="text-center mb-8 mt-20">
         <h1 className="text-3xl font-semibold text-white ">

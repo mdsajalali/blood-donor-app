@@ -1,4 +1,4 @@
-import { ArrowLeftCircle } from "lucide-react";
+import Heading from "@/components/Heading";
 import Link from "next/link";
 import React from "react";
 
@@ -40,12 +40,7 @@ const Social = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-red-800 to-red-900 px-4 py-6">
       {/* Top Bar with Back Icon and Heading */}
-      <div className="absolute top-4 left-4 right-4 flex  items-center justify-between">
-        <Link href="/dashboard">
-          <ArrowLeftCircle className="text-white" size={30} />
-        </Link>
-        <h1 className="text-lg font-semibold text-white">Socials</h1>
-      </div>
+      <Heading title="socials" />
 
       {/* Create Post Section */}
       <div className="bg-white rounded-lg shadow-lg p-4 mt-16 mb-6">
